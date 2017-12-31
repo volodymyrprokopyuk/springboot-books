@@ -1,0 +1,17 @@
+logging:
+  level:
+    org.springframework.web: DEBUG
+    org.springframework.security: DEBUG
+
+security:
+  oauth2:
+    resource:
+      userInfoUri: http://localhost:8080/user
+      jwt:
+        keyUri: http://localhost:8080/oauth/token_key
+
+keystore:
+  password: mySecretKey
+
+# $ keytool -genkeypair -alias jwt -keyalg RSA -dname "CN=jwt, L=Lugano, S=Lugano, C=CH" \
+#     -keypass mySecretKey -keystore src/main/resource/jwt.jks -storepass mySecretKey
