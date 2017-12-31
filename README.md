@@ -1,1 +1,1 @@
-# Spring Boot MVC REST Service
+# Spring Boot Web MVC REST Service
